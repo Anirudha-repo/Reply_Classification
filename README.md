@@ -43,4 +43,28 @@ This project was created for the SvaraAI / AI_ML Engineer internship assignment.
 
 ---
 
+### Modeling & Evaluation (brief)
 
+- Preprocessing: lowercasing, URL/mention replacement, simple punctuation cleaning, TF-IDF vectorization (n-grams 1–2).
+
+- Baselines: Logistic Regression (interpretable, fast), LightGBM (tree-based).
+
+- Transformer: DistilBERT fine-tuned using Hugging Face Trainer — achieved highest accuracy.
+
+- Metrics: Accuracy and Macro F1 (macro F1 chosen because it treats all classes equally — important for multi-class balance).
+
+  ---
+
+### Dependencies
+
+Key libraries used in this project:
+
+- Transformers, torch — transformer training & inference
+
+- Scikit-learn — baselines + metrics
+
+- LightGBM — tree-based baseline
+
+- Flask — lightweight API
+
+- Datasets — helpers for HF fine-tuning (if used in training notebooks)
