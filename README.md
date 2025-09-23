@@ -73,10 +73,11 @@ To set up and run this project locally:
 6. **Test the API (e.g., with Postman):**
 - Send a POST request to http://127.0.0.1:8000/predict
 - Set the request body to raw JSON with content type application/json.
-  
- [Example 1](https://github.com/Anirudha-repo/Reply_Classification/blob/main/screenshots/Screenshot%202025-09-23%20173816.png)
- [Example 2](https://github.com/Anirudha-repo/Reply_Classification/blob/main/screenshots/Screenshot%202025-09-23%20173837.png)
 
+ ![!Example 2](https://github.com/Anirudha-repo/Reply_Classification/blob/main/screenshots/Screenshot%202025-09-23%20173837.png)
+  
+ ![Example 1](https://github.com/Anirudha-repo/Reply_Classification/blob/main/screenshots/Screenshot%202025-09-23%20173816.png)
+ 
 ---
 
 ### Modeling & Evaluation (brief)
