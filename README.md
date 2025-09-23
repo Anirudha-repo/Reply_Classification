@@ -39,7 +39,43 @@ This project was created for the SvaraAI / AI_ML Engineer internship assignment.
 | LightGBM (TF-IDF)         | 0.9812  | 0.9812  |
 | DistilBERT (fine-tuned)   | **1.000** | **1.000** |
 
-> All models perform exceptionally well. DistilBERT produced the highest performance on the held-out test set. See the `/notebooks` (or training logs) for full evaluation artifacts (confusion matrices, classification reports).
+All models perform exceptionally well. DistilBERT produced the highest performance on the held-out test set. See the `/notebooks` (or training logs) for full evaluation artifacts (confusion matrices, classification reports).
+
+---
+
+### How to run this API locally
+To set up and run this project locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Anirudha-repo/Reply_Classification.git
+   cd Reply_Classification
+
+2. **Download the dataset (if not already included):**
+ Ensure reply_classification_dataset.csv is placed in the root directory of the cloned repository.
+
+3. **Create and activate a Python virtual environment**
+   ```bash
+   python -m venv venv
+   # On Windows:
+   .\venv\Scripts\activate
+   # On macOS/Linux: 
+   source venv/bin/activate
+
+4. **Install required libraries:**
+   ```bash
+   - pip install -r requirements.txt
+
+5. **Run the Flask API:**
+   ```bash
+   python Development.py
+
+6. **Test the API (e.g., with Postman):**
+- Send a POST request to http://127.0.0.1:8000/predict
+- Set the request body to raw JSON with content type application/json.
+  
+ [Example 1](https://github.com/Anirudha-repo/Reply_Classification/blob/main/screenshots/Screenshot%202025-09-23%20173816.png)
+ [Example 2](https://github.com/Anirudha-repo/Reply_Classification/blob/main/screenshots/Screenshot%202025-09-23%20173837.png)
 
 ---
 
@@ -53,7 +89,7 @@ This project was created for the SvaraAI / AI_ML Engineer internship assignment.
 
 - Metrics: Accuracy and Macro F1 (macro F1 chosen because it treats all classes equally — important for multi-class balance).
 
-  ---
+---
 
 ### Dependencies
 
