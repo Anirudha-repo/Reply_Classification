@@ -1,0 +1,12 @@
+For Deployment
+
+API framework
+    flask==2.3.2
+
+Hugging Face transformers + dependencies
+    transformers==4.44.2
+    torch==2.4.1
+
+Optional: If you use tokenizers directly
+    tokenizers==0.19.1
+
